@@ -27,4 +27,13 @@ int actual=	s.findLargest(a1);
 int expected=s.findLargest(a1);
 assertEquals(actual,expected );
 }
+	@Test
+public void test3()
+{
+	s=new SecondLargest();
+	int a1[]= {4,7,34,10,5,0,-2,11};
+int actual=	s.findLargest(a1);
+int expected=s.findLargest(a1);
+Assert.assertNotSame(false, s.findLargest(a1));
+}
 }
